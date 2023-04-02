@@ -2,7 +2,7 @@
 
 $sName = "localhost";
 $uName = "grislandru";
-$pass = "33VCStMMR#K7Y8T8";
+$pass = "";
 $db_name = "grislandru";
 
 try {
