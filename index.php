@@ -1,7 +1,7 @@
 <?php 
 $sName = "localhost";
 $uName = "grislandru";
-$pass = "33VCStMMR#K7Y8T8";
+$pass = "";
 $db_name = "grislandru";
 
 try {
@@ -123,7 +123,7 @@ session_start();
       $email = $_POST['email'];
       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
        $query = "SELECT * FROM users WHERE email='$email'";   //WHERE email='$email'
-       $mysqli = new mysqli("localhost", "grislandru", "33VCStMMR#K7Y8T8", "grislandru");
+       $mysqli = new mysqli("localhost", "grislandru", "", "grislandru");
        $result = $mysqli->query($query);
       $user = mysqli_fetch_assoc($result);
       if(!empty($user))
